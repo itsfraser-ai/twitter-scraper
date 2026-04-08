@@ -1,0 +1,19 @@
+{
+  "name": "twitter-scraper",
+  "version": "1.0.0",
+  "description": "Twitter/X research scraper for AI trending topics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --test --once",
+    "daily": "node daily-summary.js",
+    "daily:test": "node daily-summary.js --test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "apify-client": "^2.9.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
