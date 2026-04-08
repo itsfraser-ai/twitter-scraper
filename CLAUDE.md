@@ -72,7 +72,7 @@ SUPABASE_KEY=              # Service role key (not anon key)
 TELEGRAM_BOT_TOKEN=        # From @BotFather
 TELEGRAM_CHAT_ID=          # Private channel or DM chat ID
 GITHUB_TOKEN=              # Personal access token with repo write access
-GITHUB_REPO=fraserkemp/fraserai   # Target repo for daily markdown push
+GITHUB_REPO=itsfraser-ai/fraserai   # Target repo for daily markdown push
 ```
 
 ## Dependencies
