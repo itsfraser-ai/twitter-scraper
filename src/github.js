@@ -20,7 +20,7 @@ async function pushMarkdown(markdown, date) {
     return;
   }
 
-  const path = `research/twitter-scraper/${date}-twitter.md`;
+  const path = `research/twitter-research/${date}-twitter.md`;
 
   if (isTestMode) {
     console.log(`\n[TEST] Would push to ${repo}/${path}`);
