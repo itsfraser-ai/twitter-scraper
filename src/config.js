@@ -134,7 +134,7 @@ const selection = {
 
 // --- Schedule ---
 const schedule = {
-  intervalMinutes: 45,
+  intervalMinutes: 60,
   jitterMinutes: 10, // Random 0-10 min delay added to each run
   dailySummaryHour: 22, // 10pm — end-of-day summary
 };

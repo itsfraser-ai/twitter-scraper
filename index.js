@@ -118,10 +118,8 @@ async function main() {
   // Run once right away
   await runScrapeJob(scraper);
 
-  // Cron: every 45 minutes
-  // The jitter is added AFTER cron fires — we sleep a random amount
-  // before actually running. This makes our requests less predictable.
-  cron.schedule('*/45 * * * *', async () => {
+  // Cron: once per hour with random jitter to vary request timing
+  cron.schedule('0 * * * *', async () => {
     const jitter = Math.random() * schedule.jitterMinutes * 60 * 1000;
     console.log(`Cron fired, waiting ${Math.round(jitter / 1000)}s jitter...`);
     await sleep(jitter);
